@@ -2,7 +2,7 @@
 //Keyboard Events
 
 //Key Down
-let inputOne= document.getElementById('inputOne');
+let inputOne= document.getElementById('keydown');
 inputOne.addEventListener('keydown', function(e){
     inputOne.value = e.code;
     e.preventDefault()
@@ -29,7 +29,7 @@ inputFour.addEventListener('keydown', function(e){
 
         (e.target.style.opacity = 0),
         setTimeout(() =>{
-            e.target.style.visibility
-        })
+            (e.target.style.visibility = ""), (e.target.style.opacity = 1);
+        }, 5e3)
     }
 })
